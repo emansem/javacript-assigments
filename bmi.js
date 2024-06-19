@@ -1,6 +1,8 @@
+/** @format */
+
 let weight = 80.8;
 let height = 1.8;
-  let bmi = weight / (height ** 2);
+let bmi = weight / height ** 2;
 console.log(bmi);
 let classify;
 
