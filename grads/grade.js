@@ -1,23 +1,22 @@
 /** @format */
+function calculateGrade(score) {
+  let result;
 
-//assign the grade values
+  if (score >= 90 && score <= 100) {
+    result = "A";
+  } else if (score >= 80 && score < 90) {
+    result = "B";
+  } else if (score >= 70 && score < 80) {
+    result = "C";
+  } else if (score >= 60 && score < 70) {
+    result = "D";
+  } else if (score >= 0 && score < 60) {
+    result = "F";
+  } else {
+    result = "Invalid score";
+  }
 
-const mathGrade = 85;
-const scienegrade = 20;
-const englishGrade = 75;
-
-const average = (mathGrade + scienegrade + englishGrade) / 3;
-
-let restult;
-if (average >= 90) {
-  restult = " And the grade is A";
-} else if (average >= 80) {
-  restult = " And the grade is B";
-} else if (average >= 70) {
-  restult = " And the grade is C";
-} else if (average >= 60) {
-  restult = " And the grade is D";
-} else if (average < 59) {
-  restult = " And the grade is F";
+  return result;
 }
-console.log(` The average grade is ${average}  ${restult}`);
+
+console.log(calculateGrade(500));
